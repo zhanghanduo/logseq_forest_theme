@@ -17,7 +17,7 @@ I use [logseq](logseq.com) every day and it is really an amazing tool to boost m
 
 This is an ugly clone from [Cobra](https://github.com/santiyounger/Cobra) without asking for permission. So you can see the structure of the code was barely changed. 
 
-I know little of CSS so I have to copy all the stuff from [Cobra](https://github.com/santiyounger/Cobra) and [dark-hpx](https://github.com/cannibalox/logseq-dark-hpx), and adopt to my favorite color pallette. 
+I know little of CSS so I have to copy all the stuff from [Cobra](https://github.com/santiyounger/Cobra) and [dark-hpx](https://github.com/cannibalox/logseq-dark-hpx), and adopt to my favorite color palette. 
 
 Thank you [Anti](https://github.com/santiyounger) and [Cannibalox](https://github.com/cannibalox)!
 
