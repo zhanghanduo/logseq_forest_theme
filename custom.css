@@ -70,7 +70,7 @@ html[data-theme="light"] {
   --ls-menu-hover-color: #1c3444;
   --ls-primary-text-color: #d8caac;
   --ls-secondary-text-color: #c7c7c7;
-  --ls-title-text-color: #d4af63;
+  --ls-title-text-color: #ffbf00;
   /* page text title color */
   --ls-link-text-color: #d39bb6;
   --ls-link-text-hover-color: #af698b;
@@ -78,7 +78,7 @@ html[data-theme="light"] {
   --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
   --ls-tag-text-color: var(--ls-link-text-color);
   --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
-  --ls-block-bullet-border-color: #d9bb80;
+  --ls-block-bullet-border-color: #6b9e46;
   --ls-block-bullet-color: #d9bb80;
   --ls-block-highlight-color: #202e3a;
   --ls-page-checkbox-color: #4e7c9a;

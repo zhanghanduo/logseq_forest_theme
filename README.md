@@ -9,14 +9,20 @@ From the name you will know this mainly focuses on the dark theme.
 
 ## Features
 
- - add number list by adding inline tag `#numlist`
- - add Kanban feature by adding inline tag `#kanban`, `kanban-small`, `kanban-w100`, `kanban-w200`, `kanban-w300`, `kanban-w400`
+ - add number list by adding inline tag `#numlist`.
+ - add Kanban feature by adding inline tag `#kanban`, `kanban-small`, `kanban-w100`, `kanban-w200`, `kanban-w300`, `kanban-w400`.
 
 ## Installation
 
 You can either copy the `custom.css` into the `logseq` folder under you logseq notes, or just copy-paste into the **stylus** chrome extension (recommended).
 
-## Acknoledgement
+## Roadmap
+
+ - [] Add highlights for tree lines (current hack looks ugly so I temporarily removed it)
+ - [] Keep on fine-tuning the colors of some non-salient places
+ - [] Develop a beautiful theme for white mode
+
+## Acknowledgement
 
 I use [logseq](logseq.com) every day and it is really an amazing tool to boost my work. 
 
