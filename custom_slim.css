@@ -350,6 +350,18 @@ a {
   color: var(--text-accent);
 }
 
+.dark-theme b,
+.dark-theme strong,
+.dark-theme i {
+    color: #c79a12;
+}
+
+.white-theme b,
+.white-theme strong,
+.white-theme i {
+    color: #689c30;
+}
+
 .bg-base-3 {
   background-color: var(--ls-secondary-background-color);
 }
@@ -357,11 +369,16 @@ a {
 /*==================================================*/
 /* === highlighted text (mark) ==*/
 /*==================================================*/
-mark {
+.dark-theme mark {
   background: var(--text-accent);
   color: var(--inverted-text);
   padding: 0 4px;
   border-radius: 5px;
+  font-weight: 700;
+}
+
+.white-theme mark {
+  background: #9eb1a8;
   font-weight: 700;
 }
 
@@ -946,6 +963,31 @@ a.external-link {
 }
 
 /*==================================================*/
+/*===== change look of image resize handle =========*/
+/*==================================================*/
+/* .ls-block img {
+    box-shadow: none;
+}
+.resize:hover	{
+    border: 1px dotted #18aeab ;
+}
+.resize::after {
+    pointer-events: none;
+    content: "⇲";
+  font-size: 14px;
+  font-family: arial;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    bottom: 8px;
+    right: 4px;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+  z-index:10;
+}	 */
+
+/*==================================================*/
 /*===== unordered lists =========*/
 /*==================================================*/
 ul {
@@ -964,3 +1006,216 @@ ul li::marker {
   float: right;
   margin: 20px 0px 20px 20px;
 }
+
+/* ==== colorful indent levels ===*/
+
+/* .block-children {
+  border-left: 1px solid;
+  border-left-color: var(--ls-guideline-color,#ddd);
+    left: -2px;
+    position: relative;
+} */
+
+/* .block-children [level="3"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #e39b7b;
+}
+.block-children [level="4"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #87c095;
+}
+.block-children [level="5"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #83b6af;
+}
+.block-children [level="6"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #87c095;
+}
+.block-children [level="7"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="8"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #999f93;
+}
+.block-children [level="9"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="10"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #999f93;
+}
+
+.block-children [level="11"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+
+.block-children [level="12"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #999f93;
+}
+
+.block-children [level="13"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+
+.block-children [level="14"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+
+.block-children [level="15"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+
+.block-children [level="16"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+
+.block-children [level="17"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="18"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="19"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="20"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="21"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="22"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d9bb80;
+}
+.block-children [level="23"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="24"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="25"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="26"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="27"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="28"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="29"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="30"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="31"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="32"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="33"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="34"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="35"] {
+  border-left: 1px solid;
+  border-left-color: #d3a628;
+}
+.block-children [level="36"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="37"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="38"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="39"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+}
+.block-children [level="40"] {
+  border-left: 1px solid;
+    left: -2px;
+  border-left-color: #d3a628;
+} */
+
+/* ==== fix spacing - TWEAK VALUES ! ===*/
+/* .ls-block {
+  margin: -2px 0px -2px -1px !important;
+  padding: 4px 1px !important;
+} */
+

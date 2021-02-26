@@ -350,6 +350,18 @@ a {
   color: var(--text-accent);
 }
 
+.dark-theme b,
+.dark-theme strong,
+.dark-theme i {
+    color: #c79a12;
+}
+
+.white-theme b,
+.white-theme strong,
+.white-theme i {
+    color: #689c30;
+}
+
 .bg-base-3 {
   background-color: var(--ls-secondary-background-color);
 }
@@ -357,11 +369,16 @@ a {
 /*==================================================*/
 /* === highlighted text (mark) ==*/
 /*==================================================*/
-mark {
+.dark-theme mark {
   background: var(--text-accent);
   color: var(--inverted-text);
   padding: 0 4px;
   border-radius: 5px;
+  font-weight: 700;
+}
+
+.white-theme mark {
+  background: #9eb1a8;
   font-weight: 700;
 }
 
