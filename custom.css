@@ -62,9 +62,6 @@ html[data-theme="light"] {
 }
 .dark-theme {
   --ls-primary-background-color: #323d43;
-  /* 
-#CHANGED:0 background color 
-*/
   --ls-secondary-background-color: #3c474d;
   --ls-tertiary-background-color: #465258;
   --ls-block-properties-background-color: #505a60;
@@ -72,34 +69,17 @@ html[data-theme="light"] {
   --ls-border-color: #5d4251;
   --ls-menu-hover-color: #1c3444;
   --ls-primary-text-color: #d8caac;
-  /* 
-#CHANGED:100 main text color
-*/
   --ls-secondary-text-color: #c7c7c7;
   --ls-title-text-color: #d4af63;
-  /* 
-#CHANGED:110 page text title color 
-   */
+  /* page text title color */
   --ls-link-text-color: #d39bb6;
-  /*
-#CHANGED:140 text color 
-  */
   --ls-link-text-hover-color: #af698b;
-  /*  
-#CHANGED:40 hover over links
-   */
   --ls-link-ref-text-color: #d39bb6;
-  /* 
-  #CHANGED:130 text [[link]]  color
-   */
   --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
   --ls-tag-text-color: var(--ls-link-text-color);
   --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
   --ls-block-bullet-border-color: #d9bb80;
   --ls-block-bullet-color: #d9bb80;
-  /*  
-  #CHANGED:30 bullet outline dot color
-   */
   --ls-block-highlight-color: #202e3a;
   --ls-page-checkbox-color: #4e7c9a;
   --ls-page-checkbox-border-color: #477ba8;
@@ -107,9 +87,6 @@ html[data-theme="light"] {
   --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
   --ls-page-blockquote-border-color: var(--ls-secondary-text-color);
   --ls-page-inline-code-color: #fff;
-  /* 
-#CHANGED:50 inline code
-*/
   --ls-page-inline-code-bg-color: #575757;
   --ls-page-title-size: 28px;
   --ls-scrollbar-color: #3c4c55;
@@ -117,13 +94,7 @@ html[data-theme="light"] {
   --ls-scrollbar-thumb-color: var(--ls-secondary-background-color);
   --ls-head-text-color: var(--ls-link-text-color);
   --ls-icon-color: #d9bb80;
-  /*
-  #CHANGED:90 logo, back arrows 
-    */
   --ls-search-icon-color: #d9bb80;
-  /* 
-  #CHANGED:120 search bar 
-   */
   --ls-a-chosen-bg: #4e6053;
   --ls-right-sidebar-code-bg-color: #04303c;
   --ls-active-primary-color: #415c6d;
@@ -135,9 +106,6 @@ html[data-theme="light"] {
   --accent-bgcolor: #4e6053;
   --marker-switch-bgcolor: #39180deb;
   --marker-switch-color: #d9bb80;
-  /* 
-#CHANGED:0 TODO LATER COLOR 
-*/
   --marker-switch-opa: 0.7;
   --datepicker-active-bgcolor: #801212;
   --datepicker-active-bordercolor: #fff;
@@ -146,9 +114,6 @@ html[data-theme="light"] {
   --datepicker-available-hovercolor: #a7c080;
   --datepicker-available-hoverbgcolor: #192731;
   --text-accent: #a7c080;
-  /* 
-  #CHANGED:30 file path text, and external links 
-   */
   --text-hightlight: #d3a628;
   --inverted-text: #262626;
   --highlight-light: #0b0a0bf0;
@@ -177,6 +142,18 @@ html[data-theme="light"] {
 }
 :root {
   --main-container-width: 840px;
+}
+
+/*==================================================*/    
+/* == fonts == */
+/*==================================================*/ 
+html {
+  font-family: Barlow, Inter,sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol!important;
+}
+/*==================================================*/ 
+html .white-theme {
+  font-family: barlow;
+font-size: 15px !important;
 }
 
 /*==================================================*/
@@ -550,8 +527,6 @@ mark {
   color: var(--white) !important;
 }
 
-/*=====*/
-
 /*==================================================*/
 /* == inline code == */
 /*==================================================*/
@@ -640,16 +615,7 @@ iframe {
   font-weight: 600;
   color: var(--ls-primary-text-color);
 }
-/* 
-#OFF:0 daily journal emoji
- */
-/*---------------------
-#journals .title h1:before {
-  content: "📅 ";
-  font-size: 24px;
-  vertical-align: top;
-}
------------------- */
+
 #journals .journal-item {
   border-top: 0px solid;
   border-top-color: var(--ls-border-color, #738694);
@@ -1191,7 +1157,7 @@ ls-block {
 
 /*--- highlight indentation line - remove if not useful ---*/
 /*---- tweak left: and top: offset to match yout theme ----*/
-.blocks-container > div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
+/* .blocks-container > div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
 content : "└─";
 color:#db6c6c;
 display: inline-block;
@@ -1199,13 +1165,13 @@ left: -21px;
 top: -11px;
 width: 30px;
 position: relative;
-}
-.ls-block > .block-children:focus-within {
+} */
+/* .ls-block > .block-children:focus-within {
 border-left-color:#db6c6c;
     left: -7px;
     position: relative;
 border-left-width: 3px;
-}
+} */
 
 .ls-block .done {
   opacity:0.4;
