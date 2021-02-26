@@ -254,7 +254,7 @@ font-size: 15px !important;
 
 .block-children {
   border-left: 1px solid;
-  border-left-color: #e39b7b;
+  border-left-color: #9b6852;
   /* left: -2px; */
   position: relative;
 }
@@ -1298,7 +1298,7 @@ div[data-refs-self*="kanban-w400"] > .block-children .block-content {
 /*---- tweak left: and top: offset to match yout theme ----*/
 .blocks-container > div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
 content : "└─";
-color:#db6c6c;
+color:#e39b7b;
 display: inline-block;
 left: -20.5px;
 top: -11px;
@@ -1306,7 +1306,7 @@ width: 30px;
 position: relative;
 }
 .ls-block > .block-children:focus-within {
-border-left-color:#db6c6c;
+border-left-color:#e39b7b;
 left: -1px;
 /* border-left-width: 2px; */
 }
