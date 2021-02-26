@@ -7,14 +7,24 @@ From the name you will know this mainly focuses on the dark theme.
 ![screenshot](screenshot.png)
 
 
-## Features
+## Installation
+
+There are two css files: `custom_full.css` and `custom_slim.css`.
+
+`custom_slim.css` has the basic color scheme.
+`custom_full.css` adds 3 additional features on the base of `custom_slim.css`
 
  - add number list by adding inline tag `#numlist`.
  - add Kanban feature by adding inline tag `#kanban`, `#kanban-small`, `#kanban-w100`, `#kanban-w200`, `#kanban-w300`, or `#kanban-w400`.
+ - highlight current path.
+  
+> Note that these features are all integrated from [here](https://github.com/cannibalox/logseq-dark-hpx).
 
-## Installation
 
-You can either copy the `custom.css` into the `logseq` folder under you logseq notes, or just copy-paste into the **stylus** chrome extension (recommended).
+You can rename either of them to `custom.css` and copy into the `logseq` folder under you logseq notes.
+
+Alternatively you could just copy-paste them into the **stylus** chrome extension to see an instant style preview (recommended).
+
 
 ## Roadmap
 
