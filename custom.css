@@ -1307,12 +1307,12 @@ position: relative;
 }
 .ls-block > .block-children:focus-within {
 border-left-color:#db6c6c;
-left: -2px;
+left: -1px;
 /* border-left-width: 2px; */
 }
 
 .ls-block > .block-children:hover {
-  left: -2px;
-  border-left-width: 3px;
+  left: -1px;
+  border-left-width: 2px;
  }
 
