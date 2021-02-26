@@ -1300,7 +1300,7 @@ div[data-refs-self*="kanban-w400"] > .block-children .block-content {
 content : "└─";
 color:#db6c6c;
 display: inline-block;
-left: -20px;
+left: -20.5px;
 top: -11px;
 width: 30px;
 position: relative;
@@ -1312,5 +1312,7 @@ left: -2px;
 }
 
 .ls-block > .block-children:hover {
+  left: -2px;
   border-left-width: 3px;
  }
+
