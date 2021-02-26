@@ -115,7 +115,7 @@ html[data-theme="light"] {
   --datepicker-available-hoverbgcolor: #192731;
   --text-accent: #a7c080;
   --text-hightlight: #d3a628;
-  --inverted-text: #262626;
+  --inverted-text: #302e27;
   --highlight-light: #0b0a0bf0;
   --ls-block-ref-link-text-color: #74ced8;
   --admo-text-important: #e68183;
@@ -177,7 +177,8 @@ font-size: 15px !important;
   max-width: var(--main-container-width);
 }
 
-/* gradient on top and bottom for aesthetics */
+/* gradient on top and bottom for aesthetics
+ (from https://github.com/PiotrSss/logseq-bujo-theme */
 
 .cp__sidebar-main-content:before {
   content: "";
@@ -201,13 +202,20 @@ font-size: 15px !important;
   z-index: 1;
 }
 
-/* < > buttons */
+.dark-theme .cp__sidebar-main-content:before {
+  background: linear-gradient(to bottom, rgba(41, 35, 33, 0.7) 0%, rgba(48, 40, 37, 0) 100%);
+}
 
-a[title="Go Back"],
-a[title="Go Forward"] {
-    border-radius: 3px;
-    opacity: 1;
-    transition: .3s;
+.dark-theme .cp__sidebar-main-content:after {
+  background: linear-gradient(to top, rgba(41, 35, 33, 0.7) 0%, rgba(48, 40, 37, 0) 100%);
+}
+
+.white-theme .cp__sidebar-main-content:before {
+  background: linear-gradient(to bottom, rgba(241, 236, 229, .7) 0%, rgba(241, 236, 229, 0) 100%);
+}
+
+.white-theme .cp__sidebar-main-content:after {
+  background: linear-gradient(to top, rgba(241, 236, 229, .7) 0%, rgba(241, 236, 229, 0) 100%);
 }
 
 /*==================================================*/
@@ -256,9 +264,38 @@ a[title="Go Forward"] {
 	border-left-width: 5px;
 } */
 
+#sidebar-nav-wrapper {
+  border: none !important;
+}
+
 /*==================================================*/
 /* == search == */
 /*==================================================*/
+/* search-field */
+
+#search-wrapper {
+  opacity: 0;
+  transition: .3s;
+}
+
+#search-wrapper:hover,
+#search-wrapper:focus-within {
+  opacity: 1;
+}
+
+#search-wrapper>div:first-child {
+  left: 10px;
+}
+
+#search>.inner {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+#search_field:focus {
+  background: var(--ls-search-background-color);
+}
+
 #search_field {
   background-color: var(--ls-search-background-color);
   color: var(--ls-secondary-text-color);
@@ -271,6 +308,27 @@ a[title="Go Forward"] {
   box-shadow: 0 10px 15px -3px rgb(30 30 30 / 35%),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
+/* search-field */
+
+.dark-theme #search_field {
+  background: linear-gradient(to right, rgba(39, 33, 33, 1) 0%, rgba(39, 33, 33, .7) 200px, rgba(39, 33, 33, 0) 100%);
+  transition: background .3s;
+}
+
+.dark-theme #search_field:focus {
+  box-shadow: 0px 0px 20px 0px rgba(27, 22, 22, 0.8);
+}
+
+.white-theme #search_field {
+  background: linear-gradient(to right, rgba(241, 236, 229, 1) 0%, rgba(241, 236, 229, .7) 200px, rgba(241, 236, 229, 0) 100%);
+  transition: background .3s;
+}
+
+.white-theme #search_field:focus {
+  box-shadow: 0px 0px 20px 0px rgba(252, 250, 246, .8);
+}
+
 
 /*==================================================*/
 /* == MAIN == */
@@ -755,10 +813,7 @@ a.tag[href*="audio"]:after {
 /*==================================================*/
 .done {
   text-decoration: line-through #242424;
-  /* 
-#CHANGED:0 lowered opacity for done tasks
- */
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 /*==================================================*/
@@ -1172,7 +1227,3 @@ border-left-color:#db6c6c;
     position: relative;
 border-left-width: 3px;
 } */
-
-.ls-block .done {
-  opacity:0.4;
-}
