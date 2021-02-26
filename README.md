@@ -11,19 +11,20 @@ From the name you will know this mainly focuses on the dark theme.
 
 There are two css files: `custom_full.css` and `custom_slim.css`.
 
-`custom_slim.css` has the basic color scheme.
-`custom_full.css` adds 3 additional features on the base of `custom_slim.css`
+- `custom_slim.css` has the basic color scheme.
 
- - add number list by adding inline tag `#numlist`.
- - add Kanban feature by adding inline tag `#kanban`, `#kanban-small`, `#kanban-w100`, `#kanban-w200`, `#kanban-w300`, or `#kanban-w400`.
- - highlight current path.
+- `custom_full.css` adds 3 standalone features on top of `custom_slim.css`
+
+    1. add number list by adding inline tag `#numlist`.
+    2.  add Kanban feature by adding inline tag `#kanban`, `#kanban-small`, `#kanban-w100`, `#kanban-w200`, `#kanban-w300`, or `#kanban-w400`.
+    3.  highlight current path.
   
 > Note that these features are all integrated from [here](https://github.com/cannibalox/logseq-dark-hpx).
 
 
-You can rename either of them to `custom.css` and copy into the `logseq` folder under you logseq notes.
+- You can rename either of them to `custom.css` and copy into the `logseq` folder under you logseq notes.
 
-Alternatively you could just copy-paste them into the **stylus** chrome extension to see an instant style preview (recommended).
+- Alternatively you could just copy-paste them into the **stylus** chrome extension to see an instant style preview (recommended).
 
 
 ## Roadmap
@@ -36,9 +37,9 @@ Alternatively you could just copy-paste them into the **stylus** chrome extensio
 
 I use [logseq](logseq.com) every day and it is really an amazing tool to boost my work. 
 
-This is an ugly clone from [Cobra](https://github.com/santiyounger/Cobra) without asking for permission. So you can see the structure of the code was barely changed. 
+This is clone from [Cobra](https://github.com/santiyounger/Cobra).
 
-I know little of CSS so I have to copy all the stuff from [Cobra](https://github.com/santiyounger/Cobra) and [dark-hpx](https://github.com/cannibalox/logseq-dark-hpx), and adopt to my favorite color palette. 
+I know little of CSS so I have to copy much stuff from [dark-hpx](https://github.com/cannibalox/logseq-dark-hpx) and [Cobra](https://github.com/santiyounger/Cobra), and adopt to my favorite color palette. 
 
 Thank you [Anti](https://github.com/santiyounger) and [Cannibalox](https://github.com/cannibalox)!
 
