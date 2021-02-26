@@ -7,6 +7,11 @@ From the name you will know this mainly focuses on the dark theme.
 ![screenshot](screenshot.png)
 
 
+## Features
+
+ - add number list by adding inline tag `#numlist`
+ - add Kanban feature by adding inline tag `#kanban`, `kanban-small`, `kanban-w100`, `kanban-w200`, `kanban-w300`, `kanban-w400`
+
 ## Installation
 
 You can either copy the `custom.css` into the `logseq` folder under you logseq notes, or just copy-paste into the **stylus** chrome extension (recommended).
