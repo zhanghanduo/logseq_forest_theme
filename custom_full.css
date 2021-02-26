@@ -1316,11 +1316,11 @@ position: relative;
 .ls-block > .block-children:focus-within {
 border-left-color:#8eaf6b;
 left: -1px;
-/* border-left-width: 2px; */
+border-left-width: 2px;
 }
 
-.ls-block > .block-children:hover {
+/* .ls-block > .block-children:hover {
   left: -1px;
   border-left-width: 2px;
- }
+ } */
 
