@@ -1319,8 +1319,8 @@ left: -1px;
 border-left-width: 2px;
 }
 
-/* .ls-block > .block-children:hover {
+.ls-block > .block-children:hover {
   left: -1px;
   border-left-width: 2px;
- } */
+ }
 
