@@ -254,7 +254,7 @@ font-size: 15px !important;
 
 .block-children {
   border-left: 1px solid;
-  border-left-color: #9b6852;
+  border-left-color: #627949;
   /* left: -2px; */
   position: relative;
 }
@@ -1287,7 +1287,7 @@ div[data-refs-self*="kanban-w400"] > .block-children .block-content {
 /*==================================================*/
 
 .ls-block .bullet {
-  background-color: #e68183;
+  background-color: #8eaf6b;
 }
 
 .ls-block:not(:focus-within) .bullet {
@@ -1298,7 +1298,7 @@ div[data-refs-self*="kanban-w400"] > .block-children .block-content {
 /*---- tweak left: and top: offset to match yout theme ----*/
 .blocks-container > div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
 content : "└─";
-color:#e39b7b;
+color:#8eaf6b;
 display: inline-block;
 left: -20.5px;
 top: -11px;
@@ -1306,7 +1306,7 @@ width: 30px;
 position: relative;
 }
 .ls-block > .block-children:focus-within {
-border-left-color:#e39b7b;
+border-left-color:#8eaf6b;
 left: -1px;
 /* border-left-width: 2px; */
 }
