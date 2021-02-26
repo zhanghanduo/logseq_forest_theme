@@ -254,8 +254,8 @@ font-size: 15px !important;
 
 .block-children {
   border-left: 1px solid;
-  border-left-color: var(--ls-guideline-color, #ddd);
-  left: -5px;
+  border-left-color: #e39b7b;
+  /* left: -2px; */
   position: relative;
 }
 
@@ -992,10 +992,14 @@ ul li::marker {
 
 /* ==== colorful indent levels ===*/
 
-.block-children {
-  border-left: 0px solid;
-}
-.block-children [level="3"] {
+/* .block-children {
+  border-left: 1px solid;
+  border-left-color: var(--ls-guideline-color,#ddd);
+    left: -2px;
+    position: relative;
+} */
+
+/* .block-children [level="3"] {
   border-left: 1px solid;
     left: -2px;
   border-left-color: #e39b7b;
@@ -1190,13 +1194,13 @@ ul li::marker {
   border-left: 1px solid;
     left: -2px;
   border-left-color: #d3a628;
-}
+} */
 
 /* ==== fix spacing - TWEAK VALUES ! ===*/
-.ls-block {
+/* .ls-block {
   margin: -2px 0px -2px -1px !important;
   padding: 4px 1px !important;
-}
+} */
 
 /* ==== Kanban ===*/
 
@@ -1292,18 +1296,21 @@ div[data-refs-self*="kanban-w400"] > .block-children .block-content {
 
 /*--- highlight indentation line - remove if not useful ---*/
 /*---- tweak left: and top: offset to match yout theme ----*/
-/* .blocks-container > div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
+.blocks-container > div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
 content : "└─";
 color:#db6c6c;
 display: inline-block;
-left: -21px;
+left: -20px;
 top: -11px;
 width: 30px;
 position: relative;
-} */
-/* .ls-block > .block-children:focus-within {
+}
+.ls-block > .block-children:focus-within {
 border-left-color:#db6c6c;
-    left: -7px;
-    position: relative;
-border-left-width: 3px;
-} */
+left: -2px;
+/* border-left-width: 2px; */
+}
+
+.ls-block > .block-children:hover {
+  border-left-width: 3px;
+ }

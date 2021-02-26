@@ -18,7 +18,7 @@ You can either copy the `custom.css` into the `logseq` folder under you logseq n
 
 ## Roadmap
 
- - [ ] Add highlights for tree lines (current hack looks ugly so I temporarily removed it)
+ - [ ] Add colorful indention to differentiate different levels (current hacking looks ugly so I temporarily removed it)
  - [ ] Keep on fine-tuning the colors of some non-salient places
  - [ ] Develop a beautiful theme for white mode
 
