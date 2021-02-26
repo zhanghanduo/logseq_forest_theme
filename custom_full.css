@@ -4,19 +4,10 @@ html[data-theme="light"] {
   --ls-primary-background-color: white;
   --ls-secondary-background-color: #f3f7f8;
   --ls-tertiary-background-color: #fff;
-  /* 
-#CHANGED:60 light mode division line it used to be green
-*/
   --ls-quaternary-background-color: #e1f0fe;
   --ls-table-tr-even-background-color: #f4f5f7;
   --ls-active-primary-color: #d49233;
-  /* 
-#CHANGED:70 light mode: main color for internal links
-*/
   --ls-active-secondary-color: #a56b16;
-  /* 
-#CHANGED:80 light: hover color
-*/
   --ls-block-properties-background-color: var(--ls-tertiary-background-color);
   --ls-search-background-color: var(--ls-primary-background-color);
   --ls-border-color: #ccc;
@@ -116,10 +107,10 @@ html[data-theme="light"] {
   --text-accent: #a7c080;
   --text-hightlight: #d3a628;
   --inverted-text: #302e27;
-  --highlight-light: #0b0a0bf0;
+  --highlight-light: var(--ls-secondary-background-color);
   --ls-block-ref-link-text-color: #74ced8;
   --admo-text-important: #e68183;
-  --admo-bg-important: #171717;
+  --admo-bg-important: #4d3b36;
   --background: #282a36;
   --light-background: #343746;
   --lighter-background: #424450;
@@ -468,7 +459,7 @@ a {
 .CodeMirror-sizer {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  background-color: black;
+  background-color: #27352b;
 }
 .CodeMirror-gutters {
   border-right: 1px solid #4e4e4e;
@@ -495,7 +486,7 @@ a {
   background: var(--light-background);
 }
 #right-sidebar pre.CodeMirror-line {
-  background: #000;
+  background: #27352b;
 }
 .extensions__code-lang {
   position: absolute;
@@ -506,7 +497,7 @@ a {
   font-size: 0.6rem;
   color: #6fe87d;
   z-index: 1;
-  background: #000000ad;
+  background: #27352b;
 }
 .extensions__code {
   position: relative;
