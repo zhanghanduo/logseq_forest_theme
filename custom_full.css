@@ -61,7 +61,7 @@ html[data-theme="light"] {
   --ls-menu-hover-color: #1c3444;
   --ls-primary-text-color: #d8caac;
   --ls-secondary-text-color: #c7c7c7;
-  --ls-title-text-color: #bd9c59;
+  --ls-title-text-color: #c4aa55;
   /* page text title color */
   --ls-link-text-color: #d39bb6;
   --ls-link-text-hover-color: #af698b;
@@ -718,11 +718,13 @@ h1.title {
 
 .ls-block h2 {
   font-size: 1.6em !important;
+  color: #d8d18e;
   margin: 0.5em 0 0em 0;
   font-family: Barlow;
   font-weight: 700;
 }
 .ls-block h3 {
+  color: #d8d18e;
   font-size: 1.17em;
   margin: 0.8em 0 0.25rem 0;
 }
@@ -767,6 +769,7 @@ a.tag {
   color: white !important;
   background-color: var(--accent-bgcolor);
 }
+
 a.tag[href*="important"] {
   color: #fd3434;
   border-color: #fb3030;
