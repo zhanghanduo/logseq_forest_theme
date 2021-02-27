@@ -2,43 +2,43 @@
 .white-theme,
 html[data-theme="light"] {
   --ls-primary-background-color: white;
-  --ls-secondary-background-color: #f3f7f8;
-  --ls-tertiary-background-color: #fff;
-  --ls-quaternary-background-color: #e1f0fe;
+  --ls-secondary-background-color: #f7f6f4;
+  --ls-tertiary-background-color: #f1eee8;
+  --ls-quaternary-background-color: #e8e5de;
   --ls-table-tr-even-background-color: #f4f5f7;
   --ls-active-primary-color: #d49233;
   --ls-active-secondary-color: #a56b16;
-  --ls-block-properties-background-color: var(--ls-tertiary-background-color);
+  --ls-block-properties-background-color: var(--ls-secondary-background-color);
   --ls-search-background-color: var(--ls-primary-background-color);
   --ls-border-color: #ccc;
   --ls-guideline-color: var(--ls-border-color);
   --ls-menu-hover-color: var(--ls-a-chosen-bg);
-  --ls-primary-text-color: #171717;
+  --ls-primary-text-color: #433F38;
   --ls-secondary-text-color: #161e2e;
-  --ls-title-text-color: #222;
-  --ls-link-text-color: var(--ls-active-primary-color);
-  --ls-link-text-hover-color: var(--ls-active-secondary-color);
-  --ls-link-ref-text-color: var(--ls-link-text-color);
-  --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
-  --ls-tag-text-color: var(--ls-link-text-color);
-  --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+  --ls-title-text-color: var(--ls-primary-text-color);
+  --ls-link-text-color: #c95f68;
+  --ls-link-text-hover-color: #ac434c;
+  --ls-link-ref-text-color: #3d88ce;
+  --ls-link-ref-text-hover-color: #5d9cd6;
+  --ls-tag-text-color: var(--ls-link-ref-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
   --ls-slide-background-color: #fff;
   --ls-block-bullet-border-color: #00b3ff;
   --ls-block-bullet-color: #394b59;
   --ls-block-highlight-color: #c0e6fd;
   --ls-selection-background-color: #e4f2ff;
-  --ls-page-checkbox-color: var(--ls-active-primary-color);
-  --ls-page-checkbox-border-color: #8c8c8c;
+  --ls-page-checkbox-color: #9dbbd8;
+  --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
   --ls-page-blockquote-color: var(--ls-primary-text-color);
-  --ls-page-blockquote-bg-color: transparent;
-  --ls-page-blockquote-border-color: var(--ls-active-primary-color);
-  --ls-page-inline-code-bg-color: var(--ls-secondary-background-color);
+  --ls-page-blockquote-bg-color: #fbfaf8;
+  --ls-page-blockquote-border-color: #799bbc;
+  --ls-page-inline-code-bg-color: #f7f6f4;
   --ls-page-inline-code-color: var(--ls-primary-text-color);
   --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.1);
   --ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
   --ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.2);
   --ls-head-text-color: var(--ls-link-text-color);
-  --ls-icon-color: #6b7280;
+  --ls-icon-color: #c1bdb7;
   --ls-search-icon-color: var(--ls-icon-color);
   --ls-a-chosen-bg: #f4f5f7;
   --ls-right-sidebar-code-bg-color: var(--ls-secondary-background-color);
@@ -48,16 +48,16 @@ html[data-theme="light"] {
   --color-level-4: #d0e6fa;
   --color-level-5: #bbdaf6;
   --ls-block-ref-link-text-color: #dc3d85;
-  --admo-text-important: red;
+  --admo-text-important: rgb(192, 59, 36);
   --admo-bg-important: black;
 }
 .dark-theme {
   --ls-primary-background-color: #323d43;
   --ls-secondary-background-color: #3c474d;
-  --ls-tertiary-background-color: #465258;
+  --ls-tertiary-background-color: #3d474d;
   --ls-block-properties-background-color: #505a60;
   --ls-search-background-color: #27352b;
-  --ls-border-color: #5d4251;
+  --ls-border-color: #696356;
   --ls-menu-hover-color: #1c3444;
   --ls-primary-text-color: #d8caac;
   --ls-secondary-text-color: #c7c7c7;
@@ -144,7 +144,25 @@ html {
 /*==================================================*/ 
 html .white-theme {
   font-family: barlow;
-font-size: 15px !important;
+font-size: 
+
+15px !important;
+}
+
+html[data-theme=light] .cp__right-sidebar .block-content {
+  --ls-page-inline-code-bg-color: var(--ls-page-inline-code-bg-color);
+}
+
+/* dotted bg */
+
+.white-theme #app-container {
+  background-image: radial-gradient(#e0e0e0 5%, #fff 5%);
+  background-position: 0 0;
+  background-size: 25px 25px;
+}
+
+.white-theme textarea {
+  caret-color: #0075E1;
 }
 
 /*==================================================*/
@@ -714,6 +732,13 @@ h1.title {
   padding: 0px;
   line-height: 3rem;
   text-align: left;
+}
+
+.dark-theme h1.title {
+  color: var(--ls-title-text-color);
+}
+.white-theme h1.title {
+  color: #433F38;
 }
 
 .ls-block h2 {

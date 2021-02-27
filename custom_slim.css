@@ -54,10 +54,10 @@ html[data-theme="light"] {
 .dark-theme {
   --ls-primary-background-color: #323d43;
   --ls-secondary-background-color: #3c474d;
-  --ls-tertiary-background-color: #465258;
+  --ls-tertiary-background-color: #3d474d;
   --ls-block-properties-background-color: #505a60;
   --ls-search-background-color: #27352b;
-  --ls-border-color: #5d4251;
+  --ls-border-color: #696356;
   --ls-menu-hover-color: #1c3444;
   --ls-primary-text-color: #d8caac;
   --ls-secondary-text-color: #c7c7c7;
