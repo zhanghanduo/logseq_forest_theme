@@ -674,7 +674,7 @@ iframe {
   padding: 30px 0px 20px 0px;
 }
 .journal-item.content .title .title {
-  border-bottom: 1px solid var(--ls-title-text-color);
+  /* border-bottom: 1px solid var(--ls-title-text-color); */
   width: calc(var(--main-container-width) - 95px);
   font-size: 38px;
   font-family: Barlow;
