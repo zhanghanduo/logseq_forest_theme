@@ -939,6 +939,22 @@ textarea {
     opacity: .3;
 }
 
+.white-theme .logseq-tools-calendar .today {
+    padding: 5px 10px;
+    background: #dcc8b7;
+    border-radius: 3px;
+    font-weight: 900;
+    color: #753327;
+}
+
+.dark-theme .logseq-tools-calendar .today {
+    padding: 5px 10px;
+    background: #2c303c;
+    border-radius: 3px;
+    font-weight: 900;
+    color: #e0e0e0;
+}
+
 
 /* hide bullet for heading */
 
@@ -1129,7 +1145,7 @@ html[data-theme=light] {
     
     --ct-block-arrow-color: #847563;
     
-    --ct-bullet-size: 6px;
+    --ct-bullet-size: 5px;
     --ct-bullet-color: #847563;
     --ct-bullet-closed-color: #a69b8e;
     
@@ -1380,7 +1396,7 @@ html[data-theme="dark"] {
     
     --ct-block-arrow-color: rgba(91, 74, 66, 1);
     
-    --ct-bullet-size: 6px;
+    --ct-bullet-size: 5px;
     --ct-bullet-color: #5f4d45;
     --ct-bullet-closed-color: #c19d70;
     
