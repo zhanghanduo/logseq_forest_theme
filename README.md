@@ -4,27 +4,41 @@ This is my first [logseq](logseq.com) theme based on [Sacred Forest](https://git
 
 From the name you will know this mainly focuses on the dark theme.
 
-![screenshot](screenshot.png)
+Forest Night Screenshot
+![screenshot of forest night](forest_night.png)
+
+Background image Screenshot (adjusted from [clean themes](https://github.com/PiotrSss/logseq-clean-themes/blob/main/bg.css))
+
+ - white theme
+![screenshot of white theme](white_custom.png)
+ - dark theme
+![screenshot of dark theme](dark_custom.png)
 
 
 ## Installation
 
-There are two css files: `custom_full.css` and `custom_slim.css`.
+There are 3 css files: `forest_full.css`, `forest_slim.css` and `bg_img_custom.css`.
 
-- `custom_slim.css` has the basic color scheme.
+- 1. `forest_slim.css` has the basic color scheme of **forest night**.
 
-- `custom_full.css` adds 3 standalone features on top of `custom_slim.css`
+- 2. `forest_full.css` adds 3 standalone features on top of `custom_slim.css`
 
-    1. add number list by adding inline tag `#numlist`.
-    2.  add Kanban feature by adding inline tag `#kanban`, `#kanban-small`, `#kanban-w100`, `#kanban-w200`, `#kanban-w300`, or `#kanban-w400`.
-    3.  highlight current path.
+    * add number list by adding inline tag `#numlist`.
+    * add Kanban feature by adding inline tag `#kanban`, `#kanban-small`, `#kanban-w100`, `#kanban-w200`, `#kanban-w300`, or `#kanban-w400`.
+    * highlight current path.
   
-> Note that these features are all integrated from [here](https://github.com/cannibalox/logseq-dark-hpx).
+    > Note that these features are all integrated from [here](https://github.com/cannibalox/logseq-dark-hpx).
+
+- 3. `bg_img_custom.css` absorbs the awesome theme of [clean themes](https://github.com/PiotrSss/logseq-clean-themes/blob/main/bg.css) from [PiotrSss](https://github.com/PiotrSss). 
+    * I added some tiny polishes and change the _imgur_ img host to _sm.ms_
+    * I also added 3 features (mentioned above) on top of it.
+    * If you want to change the background theme, just go to `bg_img_custom.css` and scroll down to the last paragraph.
+    * Change the url of background picture.
 
 
 - You can rename either of them to `custom.css` and copy into the `logseq` folder under you logseq notes.
 
-- Alternatively you could just copy-paste them into the **stylus** chrome extension to see an instant style preview (recommended).
+- Alternatively you could just copy-paste them into the **stylus** chrome extension to see an instant style preview (**recommended**).
 
 
 ## Roadmap
@@ -37,11 +51,11 @@ There are two css files: `custom_full.css` and `custom_slim.css`.
 
 I use [logseq](logseq.com) every day and it is really an amazing tool to boost my work. 
 
-This is clone from [Cobra](https://github.com/santiyounger/Cobra).
+This can be thought as a fork of [darker-hpx](https://github.com/cannibalox/logseq-dark-hpx/blob/master/logseq-darker-hpx.css) and [clean theme](https://github.com/PiotrSss/logseq-clean-themes).
 
-I know little of CSS so I have to copy much stuff from [dark-hpx](https://github.com/cannibalox/logseq-dark-hpx) and [Cobra](https://github.com/santiyounger/Cobra), and adopt to my favorite color palette. 
+I know little of CSS so I have to copy much stuff from them and adopt to my favorite color palette. 
 
-Thank you [Anti](https://github.com/santiyounger) and [Cannibalox](https://github.com/cannibalox)!
+Thank you [Piotr](https://github.com/PiotrSss), [Cannibalox](https://github.com/cannibalox), and [Santi](https://github.com/santiyounger)!
 
 ## Inspriation
 
