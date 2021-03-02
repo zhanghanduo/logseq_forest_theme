@@ -29,6 +29,8 @@ html[data-theme="light"] {
   --marker-switch-opa: 0.7;
   --ls-block-ref-link-text-color: var(--ls-link-text-color);
   --ls-h2-color: #3d2a23;
+  --ct-calendar-day-color: #9f5d5d;
+  --ct-calendar-day-color-hover: #743d3d;
 }
 .dark-theme {
   --ls-primary-background-color: #323d43;
@@ -110,6 +112,8 @@ html[data-theme="light"] {
   --pink: #ea8dcc;
   --pink-hover: #ff79c688;
   --ls-h2-color: #d8d18e;
+  --ct-calendar-day-color: #d39bb6;
+  --ct-calendar-day-color-hover: #af698b;
 }
 :root {
   --main-container-width: 840px;
@@ -1052,6 +1056,84 @@ ul li::marker {
   margin: 20px 0px 20px 20px;
 }
 
+/* ==== Calendar ===*/
+
+#contents .logseq-tools-calendar .page-ref:before,
+#contents .logseq-tools-calendar .page-ref:after {
+    display: none;
+}
+
+
+.logseq-tools-calendar h2 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.logseq-tools-calendar table {
+    margin-top: 5px;
+}
+
+.cp__sidebar-main-content .logseq-tools-multiple-calendars {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.cp__sidebar-main-content .logseq-tools-multiple-calendars .logseq-tools-calendar {
+    flex: 0 50%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.logseq-tools-calendar tr {
+    background: none !important;
+}
+
+.logseq-tools-calendar td {
+    font-weight: 600;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td,
+.logseq-tools-calendar tr {
+    border: none;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td {
+    text-align: center;
+}
+
+.logseq-tools-calendar .page-ref {
+    color: var(--ct-calendar-day-color);
+}
+
+.logseq-tools-calendar .page-ref:hover {
+    color: var(--ct-calendar-day-color-hover);
+}
+
+
+/* Calendar - pages from other months */
+
+.logseq-tools-calendar .outofmonth {
+    opacity: .3;
+}
+
+.white-theme .logseq-tools-calendar .today {
+    padding: 5px 10px;
+    background: #dcc8b7;
+    border-radius: 3px;
+    font-weight: 900;
+    color: #753327;
+}
+
+.dark-theme .logseq-tools-calendar .today {
+    padding: 5px 10px;
+    background: #2c303c;
+    border-radius: 3px;
+    font-weight: 900;
+    color: #e0e0e0;
+}
+
 /* ==== colorful indent levels ===*/
 
 /* .block-children {
@@ -1358,7 +1440,7 @@ div[data-refs-self*="kanban-w400"] > .block-children .block-content {
 
 /*--- highlight indentation line - remove if not useful ---*/
 /*---- tweak left: and top: offset to match yout theme ----*/
-.blocks-container > div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
+.blocks-container div:not(:first-child) .ls-block:focus-within > div:first-child .bullet:before{
 content : "└─";
 color:#8eaf6b;
 display: inline-block;
